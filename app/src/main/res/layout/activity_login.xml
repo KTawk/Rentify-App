@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient_background"
+    tools:context=".LoginActivity">
+
+    <!-- Page Title -->
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
+        android:text="Sign In"
+        android:textSize="48sp"
+        android:letterSpacing="0.1"
+        android:fontFamily="@font/pacifico"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:padding="8dp" />
+
+    <!-- Username Label -->
+    <TextView
+        android:id="@+id/usernameLabel_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="10dp"
+        android:text="Username"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <!-- EditText for Username -->
+    <EditText
+        android:id="@+id/usernameInput_Login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter username"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text_box"
+        android:padding="12dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="6dp" />
+
+    <!-- Password Label -->
+    <TextView
+        android:id="@+id/passwordLabel_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Password"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <!-- EditText for Password -->
+    <EditText
+        android:id="@+id/passwordInput_Login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_box"
+        android:padding="12dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="6dp" />
+
+    <!-- Button for Login -->
+    <Button
+        android:id="@+id/loginButton_Login"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:background="@drawable/button_primary_second"
+        android:layout_marginTop="40dp"
+        android:contentDescription="Login Button" />
+
+    <!-- Button for Back -->
+    <Button
+        android:id="@+id/backlBtn_login"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:text="Back"
+        android:background="@drawable/button_secondary"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:contentDescription="Back Button" />
+</LinearLayout>

@@ -1,0 +1,191 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/pacifico"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:contentDescription="Sign Up page title" />
+
+        <!-- First Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="First Name label" />
+
+        <EditText
+            android:id="@+id/firstNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter your first name"
+            android:inputType="textPersonName"
+            android:background="@drawable/edit_text_box"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:importantForAccessibility="yes" />
+
+        <!-- Last Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Last Name label" />
+
+        <EditText
+            android:id="@+id/lastNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter your last name"
+            android:inputType="textPersonName"
+            android:background="@drawable/edit_text_box"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:importantForAccessibility="yes" />
+
+        <!-- Username -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Username label" />
+
+        <EditText
+            android:id="@+id/usernameInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Choose a username"
+            android:inputType="textPersonName"
+            android:background="@drawable/edit_text_box"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:importantForAccessibility="yes" />
+
+        <!-- Password -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Password label" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_box"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:importantForAccessibility="yes" />
+
+        <!-- Role Selection -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Role"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Role selection label" />
+
+        <RadioGroup
+            android:id="@+id/roleRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/adminRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin"
+                android:textColor="@color/black"
+                android:button="@drawable/radio_button_custom"
+                android:padding="12dp"
+                android:layout_marginEnd="16dp" />
+
+            <RadioButton
+                android:id="@+id/renterRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Renter"
+                android:textColor="@color/black"
+                android:button="@drawable/radio_button_custom"
+                android:padding="12dp"
+                android:layout_marginEnd="16dp" />
+
+            <RadioButton
+                android:id="@+id/lesserRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lesser"
+                android:textColor="@color/black"
+                android:button="@drawable/radio_button_custom"
+                android:padding="12dp" />
+        </RadioGroup>
+
+
+        <!-- Create Account Button -->
+        <Button
+            android:id="@+id/createAccountButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_primary_second"
+            android:textColor="@color/white"
+            android:text="Create Account"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:contentDescription="Create Account button" />
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/backBtn_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_secondary"
+            android:textColor="@color/black"
+            android:text="Back"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:contentDescription="Back button to return to previous screen" />
+    </LinearLayout>
+</ScrollView>

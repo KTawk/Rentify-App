@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Rentify"
+        tools:targetApi="31">
+        <activity
+            android:name=".ViewRequests"
+            android:exported="false"
+            android:theme="@style/Theme.Rentify" />
+        <activity
+            android:name=".RequestedItems"
+            android:exported="false"
+            android:label="@string/title_activity_requested_items"
+            android:theme="@style/Theme.Rentify" />
+        <activity
+            android:name=".ViewItemsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_view_items"
+            android:theme="@style/Theme.Rentify" />
+        <activity
+            android:name=".ItemsViewActivity"
+            android:exported="false"
+            android:label="@string/title_activity_items_view"
+            android:theme="@style/Theme.Rentify" />
+        <activity
+            android:name=".AddItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddItem"
+            android:exported="false" />
+        <activity
+            android:name=".ListOfCategory"
+            android:exported="false" />
+        <activity
+            android:name=".ManageCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

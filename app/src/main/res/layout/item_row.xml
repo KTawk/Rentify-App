@@ -1,0 +1,137 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    android:background="@drawable/card_gradient_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/image_ItemRow"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:contentDescription="Item Image"
+            android:src="@drawable/placeholder_image"
+            android:background="@drawable/image_rounded_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name_itemRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Item Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            app:layout_constraintStart_toEndOf="@id/image_ItemRow"
+            app:layout_constraintTop_toTopOf="@id/image_ItemRow"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/category_itemRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Category: Vehicles"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            app:layout_constraintStart_toEndOf="@id/image_ItemRow"
+            app:layout_constraintTop_toBottomOf="@id/name_itemRow"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/desc_itemRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="BMW"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            app:layout_constraintStart_toEndOf="@id/image_ItemRow"
+            app:layout_constraintTop_toBottomOf="@id/category_itemRow"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/fromDate_itemRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From: 19/11/2024"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_ItemRow" />
+
+        <TextView
+            android:id="@+id/toDate_itemRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="To: 26/11/2024"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            app:layout_constraintStart_toStartOf="@id/fromDate_itemRow"
+            app:layout_constraintTop_toBottomOf="@id/fromDate_itemRow" />
+
+        <TextView
+            android:id="@+id/price_itemRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="100.00 $"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/fromDate_itemRow"
+            app:layout_constraintTop_toBottomOf="@id/toDate_itemRow" />
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fromDate_itemRow">
+
+        <ImageButton
+            android:id="@+id/editBtn_itemRow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_edit"
+            android:contentDescription="Edit"
+            app:tint="@color/gray"
+            android:background="?attr/selectableItemBackground" />
+
+        <ImageButton
+            android:id="@+id/deleteBtn_itemRow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/ic_delete"
+            android:contentDescription="Delete"
+            app:tint="@color/black"
+            android:background="?attr/selectableItemBackground" />
+
+        <ImageButton
+            android:id="@+id/requestBtn_itemRow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/ic_add3"
+            android:contentDescription="Request"
+            android:background="?attr/selectableItemBackground" />
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

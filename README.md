@@ -2,7 +2,7 @@
 
 Rentify is an Android application designed to simplify item rentals by connecting people who want to rent out their belongings (Lessors) with people looking to rent items (Renters). This app supports account management, item listings, rental requests, and efficient communication between users.
 
-<br> <br>
+<br> 
 
 ✨ Features
 
@@ -12,7 +12,7 @@ Item Management: Lessors can easily list, edit, or delete items for rent.
 Item Search: Renters can search for items by category or name.
 Rental Requests: Facilitates rental requests and approvals between users.
 
-
+<br>
 
 🛠 Tech Stack
 
@@ -21,7 +21,7 @@ Android Studio (Koala, API level 33+)
 Firebase (Authentication and Database)
 UML (Software Design & Documentation)
 
-
+<br>
 
 🚀 Setup and Installation
 
